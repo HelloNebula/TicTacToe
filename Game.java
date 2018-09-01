@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class Game {
 	// have it update every move with scanner("top right", "bottom middle")
-	public static ArrayList<String> tracker = new ArrayList<String>();
+	public static ArrayList<String> tracker = new ArrayList<String>();//What is the ~ mean??????????????????????????????????????????????????????????????????
 	public static char marker[] = new char[2];
 	public static boolean gameGoing = true;
 	//
@@ -11,10 +11,12 @@ public class Game {
 		for (int i = 0; i <= 8; i++) {
 			tracker.add(" ");
 		}
-		Boolean X = true; // If X is true, then X is the player marker, otherwise its O
-		int xChanger = 1;
+
+		boolean X = true; // If X is true, then X is the player marker, otherwise its O
+		int xChanger = 1; //what is xChanger.
 		String playerMarker = "X";
-		
+		// What is scansRan???
+		// what if the game lasts longer than 1000 moves???. Why do you have this arbitrary limit on the moves of the game?
 		while(scansRan < 1000) {
 			if (xChanger == 1) {
 				X = true;
